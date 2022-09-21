@@ -1,0 +1,32 @@
+.main-container{
+    height: 90vh;
+    width:60vw;
+    background-color: rgb(219, 246, 237);
+    margin-left: 260px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.table-mark{
+    position: relative;
+    left: 470px;
+    top: -300px;
+   
+}
+
+.marks{
+    position: relative;
+    left: 60px;
+}
+
+.btn{
+    margin-left: 200px;
+    width: 8vw;
+    height: 6vh;
+}
+
+.btun{
+    margin-left: 30px;
+    width: 8vw;
+    height: 6vh;
+}

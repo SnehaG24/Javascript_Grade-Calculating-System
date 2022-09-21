@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade_Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <nav class="navigation">
+            <center>
+                <h2>GRADE CALCULATION SYSTEM</h2>
+            </center>
+        </nav>
+        <hr>
+
+        <div class="marks">
+            <br>
+            <h3>MARKS OBTAINED : </h3><br>
+            <label for="inp1">
+                <b>IP :</b>
+                <input type="number" id="inp1" class="class1"></label> <br><br><br><br>
+
+            <label for="inp2">
+                <b>SE :</b>
+                <input type="number" id="inp2" class="class2"></label><br><br><br><br>
+
+            <label for="inp3">
+                <b>CNS :</b>
+                <input type="number" id="inp3" class="class3"></label><br><br><br><br>
+
+            <label for="inp4">
+                <b>EEB :</b>
+                <input type="number" id="inp4" class="class4"></label><br><br><br><br>
+
+            <label for="inp5">
+                <b>PCE :</b>
+                <input type="number" id="inp5" class="class5"></label><br><br><br>
+
+            <button type="submit" class="btn"  id="btn1" onclick="next()">CALCULATE</button>
+            <button type="reset"  class="btun" id="btn2" onclick="res()">RESET</button>
+        </div>
+
+
+        <div class="table-mark">
+            <h4>Total Marks : 500</h4>
+            <h4>Total Marks obtained : <span class="spanclass" id="spanid"></span></h4>
+            <h4>Percentage : <span class="spanclass1" id="spanid1"></span></h4>
+            <h4>Remark : </h4>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>
