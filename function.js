@@ -35,9 +35,3 @@ function next() {
 
 }
 
-function res() {
-    document.getElementById('spanid').innerHTML = '--';
-    document.getElementById('spanid1').innerHTML = '--';
-    document.getElementById("Remarks").innerHTML='--';
-}
-
