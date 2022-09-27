@@ -8,15 +8,16 @@
 }
 
 .table-mark{
-    position: relative;
-    left: 470px;
-    top: -300px;
+    position: absolute;
+    left: 760px;
+    top: 230px;
+    
    
 }
 
 .marks{
-    position: relative;
-    left: 60px;
+    position: absolute;
+    left: 370px;
 }
 
 .btn{

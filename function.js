@@ -1,41 +1,43 @@
 
-let ip = parseInt(document.getElementById('inp1').value);
-let se = parseInt(document.getElementById('inp2').value);
-let cns = parseInt(document.getElementById('inp3').value);
-let eeb = parseInt(document.getElementById('inp4').value);
-let pce = parseInt(document.getElementById('inp5').value);
-
-
-let add = document.getElementById('spanid');
-let percent = document.getElementById('spanid1');
-
-
-let percentage;
-
 function next() {
-    
-    let sum = ip + se + cns + eeb + pce;
-    let percentage = (sum / 500) * 100;
-    // console.log(sum);
+
+    var ip = parseInt(document.getElementById('inp1').value);    // user value will get accepted with the help of value
+    var se = parseInt(document.getElementById('inp2').value);
+    var cns = parseInt(document.getElementById('inp3').value);
+    var eeb = parseInt(document.getElementById('inp4').value);
+    var pce = parseInt(document.getElementById('inp5').value);
+
+
+    var add = document.getElementById('spanid');
+    var percent = document.getElementById('spanid1');
+
+
+    var percentage;
+
+    var sum = ip + se + cns + eeb + pce;
+    var percentage = (sum / 500) * 100;
     add.innerHTML = sum;
     percent.innerHTML = percentage;
+
+    if (percentage >= 80) {
+        document.getElementById("Remarks").innerHTML = "<b>A</b>"
+
+    }
+    else if (percentage >= 70 && percentage <= 79) {
+        document.getElementById("Remarks").innerHTML = "<b>B</b>"
+    }
+    else if (percentage >= 60 && percentage <= 69) {
+        document.getElementById("Remarks").innerHTML = "<b>C</b>"
+    }
+    else {
+        document.getElementById("Remarks").innerHTML = "<b>D</b>"
+    }
+
 }
 
-function res(){
-    // ip=0;
-    // se=0;
-    // cns=0;
-    // eeb=0;
-    // pce=0;
-    document.getElementById('inp1').innerHTML=0;
-    document.getElementById('inp2').innerHTML=0;
-    document.getElementById('inp3').innerHTML=0;
-    document.getElementById('inp4').innerHTML=0;
-    document.getElementById('inp5').innerHTML=0;
-    sum=0;
-    percentage=0;
-    document.getElementById('spanid').innerHTML=sum;
-    document.getElementById('spanid1').innerHTML=percentage;
-
+function res() {
+    document.getElementById('spanid').innerHTML = '--';
+    document.getElementById('spanid1').innerHTML = '--';
+    document.getElementById("Remarks").innerHTML='--';
 }
 
