@@ -1,7 +1,7 @@
 
 function next() {
 
-    var ip = parseInt(document.getElementById('inp1').value);    // user value will get accepted with the help of value
+    var ip = parseInt(document.getElementById('inp1').value);   
     var se = parseInt(document.getElementById('inp2').value);
     var cns = parseInt(document.getElementById('inp3').value);
     var eeb = parseInt(document.getElementById('inp4').value);
